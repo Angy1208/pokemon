@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    background-color: #f2f2f2; /* Fondo más claro para mayor contraste */
+    color: #333; /* Texto más oscuro para mayor legibilidad */
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2; /* Fondo más claro */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar el contenedor */
+}
+
+.row {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #fa6400;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: "Karla", sans-serif; /* Estilo de fuente consistente */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    min-width: 110px;
+    color: white; /* Texto blanco para mayor contraste */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fb8332;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sutil sombra aumentada al pasar el ratón */
+}
+
+.card--container {
+    background-color: #fff; /* Fondo blanco para resaltar la tarjeta */
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #fa6400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar la tarjeta */
+    margin: 10px; /* Margen para separar las tarjetas */
+}
+
+/* Estilos adicionales para la tarjeta del Pokémon */
+.card--container img {
+    max-width: 100px;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.card--container h2 {
+    color: #fa6400; /* Color del nombre del Pokémon */
+    margin: 10px 0;
+}
+
+.card--container p {
+    color: #333; /* Color del texto de la tarjeta */
+    margin: 5px 0;
+}
